@@ -100,7 +100,6 @@ header {
 }
 
 .top-menu ul li a:hover {
-    background-color: rgba(68, 68, 68, 0.781);
     -webkit-text-decoration: underline solid white;
     text-decoration: underline solid white;
 }
@@ -138,6 +137,13 @@ a:focus {
     margin: 0.5em 0;
     color: black;
     font-size: 1.4em;
+    font-weight: normal;
+    -webkit-transition: box-shadow 0.4s ease;
+    transition: box-shadow 0.4s ease;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 10px 3px grey;
 }
 
 /* slut på kod för TEXTER & LÄNKAR */
