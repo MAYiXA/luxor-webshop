@@ -13,8 +13,7 @@ body { /* vit body med lite margin */
     background-image: url("./bg.png");
     background-size: cover;
     border: 20px solid lightgrey;
-    min-height: 45em;
-    padding: 1% 3%;
+    padding: 1% 3% 0 3%;
 }
 
 /* slut på kod för BAS */
@@ -80,4 +79,14 @@ h2 {
     background-color: lightgrey;
     padding: 0.7em 3.5em;
     color: black;
+}
+
+/* slut på kod för TEXTER & LÄNKAR */
+
+/* BILDER */
+.img-big {
+    background-image: url("hund1.png");
+    background-size: contain;
+    width: 60%;
+    height: 40em;
 }
