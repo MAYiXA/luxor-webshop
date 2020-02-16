@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Vidaloka&display=swap'); /* google fonts typsnitt Vidaloka och Montserrat importerade till stilmallen */
 /* BAS */
+
 html {
     box-sizing: border-box;
 }
@@ -16,9 +18,18 @@ body { /* vit body med lite margin */
     padding: 1% 3% 0 3%;
 }
 
-/* slut på kod för BAS */
+.item-wrap {
+    display: flex;
+}
 
+.intro {
+    margin: 10% 0;
+}
+
+/* slut på kod för BAS */
+/* -------------------------- */
 /* HEADER/NAVIGERING */
+
 header {
     display: flex;
 }
@@ -37,13 +48,10 @@ header {
     flex-flow: row wrap;
 }
 
-.item-wrap {
-    display: flex;
-}
-
 /* slut på kod för BAS */
-
+/* -------------------------- */
 /* TEXTER & LÄNKAR */
+
 #brand { /* tog bort all margin/padding då jag använde mig av margin på själva containern rubriken ligger i för att få "luft" runtom */
     margin: 0;
     padding: 0;
@@ -54,6 +62,8 @@ header {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+    font-family: 'Vidaloka', serif;
+    font-weight: 400;
     transition: letter-spacing 0.5s ease-in-out;
 }
 
@@ -71,22 +81,44 @@ header {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
+    font-family: 'Vidaloka', serif;
+    font-weight: 400;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro h2 {
+    max-width: 8em;
+}
+
+.intro p {
+    font-size: 1.5em;
+    max-width: 16em;
 }
 
 .button {
+    display: inline-block;
     text-decoration: none;
     background-color: lightgrey;
     padding: 0.7em 3.5em;
+    margin: 0.5em 0;
     color: black;
+    font-size: 1.5em;
 }
 
 /* slut på kod för TEXTER & LÄNKAR */
-
+/* -------------------------- */
 /* BILDER */
+
 .img-big {
     background-image: url("hund1.png");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
     width: 60%;
-    height: 40em;
 }
+
+/* slut på kod för BILDER */
