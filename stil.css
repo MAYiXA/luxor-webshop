@@ -151,6 +151,11 @@ input[type="submit"] {
     border-bottom: 1px solid white;
 }
 
+.top-menu ul li a:focus,
+.top-menu ul li a:active {
+    color: orangered;
+}
+
 h2 {
     margin: 0.5em 0;
     font-size: 2.8em;
