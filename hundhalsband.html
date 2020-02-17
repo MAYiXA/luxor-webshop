@@ -33,14 +33,42 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="main-center">
             <div class="item-wrap">
-                <img class="img-product" src="collar1.png" width="650" height="550" alt="Produktbild 1">
-                <section class="product">
-                    <h2>Halsband 1</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, non quia et nostrum ab qui temporibus ex obcaecati? Quidem, vero. Voluptate, mollitia nobis dolor quae architecto obcaecati veritatis odit adipisci!</p>
-                    <a href="#" class="button">Köp</a>
+                <img class="img-product" src="collar1.png" width="675" height="500" alt="Produktbild 1">
+                <section class="product-right">
+                    <h2 class="product-title">Halsband 1</h2>
+                    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, non quia et nostrum ab qui temporibus ex obcaecati? Quidem, vero. Voluptate, mollitia nobis dolor quae architecto obcaecati veritatis odit adipisci!</p>
+                    <form class="product-form" action="#">
+                        <p class="product-price">Pris <span>000 SEK</span></p>
+                        <label for="sizes">Storlek</label>
+                        <select id="sizes" name="sizes" required>
+                            <option value="" disabled selected>Välj här...</option>
+                            <option value="small">Small 20-35cm</option>
+                            <option value="medium">Medium 36-50cm</option>
+                            <option value="large">Large 51-65cm</option>
+                        </select>
+                        <input type="submit" class="button" value="Köp">
+                    </form>
                 </section>
+            </div>
+            <div class="item-wrap">
+                <section class="product-left">
+                    <h2 class="product-title">Halsband 2</h2>
+                    <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, non quia et nostrum ab qui temporibus ex obcaecati? Quidem, vero. Voluptate, mollitia nobis dolor quae architecto obcaecati veritatis odit adipisci!</p>
+                    <form class="product-form" action="#">
+                        <label for="sizes">Storlek</label>
+                        <select id="sizes" name="sizes" required>
+                            <option value="" disabled selected>Välj här...</option>
+                            <option value="small">Small 20-35cm</option>
+                            <option value="medium">Medium 36-50cm</option>
+                            <option value="large">Large 51-65cm</option>
+                        </select>
+                        <p class="product-price">Pris <span>000 SEK</span></p>
+                        <input type="submit" class="button" value="Köp">
+                    </form>
+                </section>
+                <img class="img-product" src="collar2.png" width="675" height="500" alt="Produktbild 2">
             </div>
         </main>
         <footer id="footer-bottom">

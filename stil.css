@@ -19,6 +19,10 @@ body { /* vit body med lite margin */
     position: relative;
 }
 
+.main-center {
+    margin: 0 5%;
+}
+
 .item-wrap {
     display: -webkit-box;
     display: flex;
@@ -26,6 +30,19 @@ body { /* vit body med lite margin */
 
 .intro {
     margin: 10% 0;
+}
+
+.product-right {
+    position: relative;
+    left: 0;
+    top: 10em;
+}
+
+.product-left {
+    position: relative;
+    right: 0;
+    top: 10em;
+    text-align: right;
 }
 
 #footer-bottom {
@@ -62,6 +79,39 @@ header {
 }
 
 /* slut på kod för HEADER/NAVIGERING layout */
+/* -------------------------- */
+/* FORMULÄR */
+
+.product-form {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.product-right .product-price {
+    margin-right: 3.5em;
+}
+
+.product-left .product-price {
+    margin-left: 3.5em;
+}
+
+select:focus,
+select:active {
+    outline: 1px dotted white;
+    outline-offset: 0.2em;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 2em 0;
+}
+
+.product-left input[type="submit"] {
+    position: absolute;
+    right: 0;
+}
+
+/* slut på kod för FORMULÄR */
 /* -------------------------- */
 /* TEXTER & LÄNKAR */
 
@@ -112,7 +162,8 @@ p, a {
     font-family: 'Montserrat', sans-serif;
 }
 
-a:focus {
+a:focus,
+a:active {
     outline: 1px dotted white;
     outline-offset: 0.2em;
 }
@@ -135,12 +186,37 @@ a:focus {
     color: black;
     font-size: 1.4em;
     font-weight: normal;
+    border: 0;
     -webkit-transition: box-shadow 0.4s ease;
     transition: box-shadow 0.4s ease;
 }
 
 .button:hover {
     box-shadow: 1px 1px 10px 3px grey;
+}
+
+.button:focus,
+.button:active {
+    outline: 1px dotted white;
+    outline-offset: 0.2em;
+}
+
+.product-description {
+    max-width: 35em;
+}
+
+.product-price {
+    font-size: 1.3em;
+    display: inline;
+}
+
+.product-price span {
+    font-weight: bold;
+}
+
+.product-form label {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 0.5em;
 }
 
 .footer-bottom-link {
@@ -167,7 +243,8 @@ a:focus {
 }
 
 .img-product {
-    margin: 0 2em 2em 2em;
+    margin: 3.5em 7em;
+    border-bottom: 1px solid white;
 }
 
 /* slut på kod för BILDER */
