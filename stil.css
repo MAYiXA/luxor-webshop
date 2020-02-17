@@ -20,7 +20,7 @@ body { /* vit body med lite margin */
 }
 
 .main-center {
-    margin: 0 5%;
+    margin: 0 2%;
 }
 
 .item-wrap {
@@ -206,10 +206,6 @@ a:active {
     outline-offset: 0.2em;
 }
 
-.product-description {
-    max-width: 35em;
-}
-
 .product-price {
     font-size: 1.3em;
     display: inline;
@@ -248,8 +244,8 @@ a:active {
 }
 
 .img-product {
-    margin: 3.5em 7em;
     border-bottom: 1px solid white;
+    margin: 3.5em 1em;
 }
 
 /* slut på kod för BILDER */
