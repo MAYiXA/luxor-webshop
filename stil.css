@@ -30,7 +30,7 @@ body { /* vit body med lite margin */
 
 #footer-bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 0.5em;
     right: 0;
 }
 
@@ -87,21 +87,18 @@ header {
 }
 
 .top-menu ul li a {
-    -webkit-text-decoration: underline solid transparent;
-    text-decoration: underline solid transparent;
+    text-decoration: none;
     color: white;
     font-size: 1.2em;
     display: inline-block;
     padding: 0.8em 1em;
-    -webkit-transition: -webkit-text-decoration 0.5s ease;
-    transition: -webkit-text-decoration 0.5s ease;
-    transition: text-decoration 0.5s ease;
-    transition: text-decoration 0.5s ease, -webkit-text-decoration 0.5s ease;
+    -webkit-transition: color 0.4s ease;
+    transition: color 0.4s ease;
 }
 
 .top-menu ul li a:hover {
-    -webkit-text-decoration: underline solid white;
-    text-decoration: underline solid white;
+    color: orangered;
+    border-bottom: 1px solid white;
 }
 
 h2 {
@@ -116,7 +113,7 @@ p, a {
 }
 
 a:focus {
-    outline: 2px dashed yellow;
+    outline: 1px dotted white;
     outline-offset: 0.2em;
 }
 
@@ -146,16 +143,31 @@ a:focus {
     box-shadow: 1px 1px 10px 3px grey;
 }
 
+.footer-bottom-link {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    -webkit-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+}
+
+.footer-bottom-link:hover {
+    color: orangered;
+}
+
 /* slut på kod för TEXTER & LÄNKAR */
 /* -------------------------- */
 /* BILDER */
 
-.img-big {
-    background-image: url("hund1.png");
+.img-intro {
+    background: url("hund1.png") no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
     background-position: bottom right;
     width: 60%;
+}
+
+.img-product {
+    margin: 0 2em 2em 2em;
 }
 
 /* slut på kod för BILDER */
