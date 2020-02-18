@@ -45,6 +45,13 @@ body { /* vit body med lite margin */
     text-align: right;
 }
 
+.gallery {
+    margin: 4em 0 5em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
 #footer-bottom {
     position: absolute;
     bottom: 0.5em;
@@ -220,6 +227,10 @@ a:active {
     margin-right: 0.5em;
 }
 
+.model-photos h2 {
+    margin-top: 1em;
+}
+
 .footer-bottom-link {
     text-decoration: none;
     color: white;
@@ -246,6 +257,10 @@ a:active {
 .img-product {
     border-bottom: 1px solid white;
     margin: 3.5em 1em;
+}
+
+.img-gallery {
+    padding: 0.5em;
 }
 
 /* slut på kod för BILDER */
