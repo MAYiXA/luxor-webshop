@@ -23,6 +23,10 @@ body { /* vit body med lite margin */
     margin: 0 2%;
 }
 
+.main-margin-bottom {
+    margin: 0 0 5%;
+}
+
 .item-wrap {
     display: -webkit-box;
     display: flex;
@@ -50,6 +54,13 @@ body { /* vit body med lite margin */
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
+}
+
+.questions {
+    margin: 1em;
+    padding: 1.5em;
+    background-color: grey;
+    color: black;
 }
 
 #footer-bottom {
@@ -118,6 +129,11 @@ input[type="submit"] {
     right: 0;
 }
 
+label[for="textbox"],
+#textbox {
+    display: block;
+}
+
 /* slut på kod för FORMULÄR */
 /* -------------------------- */
 /* TEXTER & LÄNKAR */
@@ -164,10 +180,25 @@ input[type="submit"] {
 }
 
 h2 {
-    margin: 0.5em 0;
+    margin: 1em 0 0.5em;
     font-size: 2.8em;
     font-family: 'Vidaloka', serif;
     font-weight: 400;
+}
+
+h3 {
+    margin: 1em 0 0.5em;
+    font-size: 2em;
+    font-family: 'Vidaloka', serif;
+    font-weight: 400;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Vidaloka', serif;
 }
 
 p, a {
@@ -227,8 +258,9 @@ a:active {
     margin-right: 0.5em;
 }
 
-.model-photos h2 {
-    margin-top: 1em;
+.questions p {
+    font-weight: bold;
+    margin: 0;
 }
 
 .footer-bottom-link {
