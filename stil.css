@@ -208,7 +208,13 @@ input[type="submit"] {
 .contact-page .contact-form .input-wrap {
     display: flex;
     flex-flow: column wrap;
-    margin: 0 1em 2em 0;
+    width: 45%;
+}
+
+.contact-page .contact-form .contact-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
 }
 
 .contact-page .contact-form .input-wrap input {
@@ -223,7 +229,7 @@ input[type="submit"] {
 }
 
 .contact-page #textbox {
-    width: 100%;
+    width: 99%;
     height: 10em;
     padding: 0.5em;
     border: 1px solid white;
