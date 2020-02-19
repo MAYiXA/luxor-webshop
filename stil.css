@@ -63,6 +63,10 @@ body { /* vit body med lite margin */
     margin: 0 18% 5%;
 }
 
+.q-and-a {
+    margin: 0 0 5%;
+}
+
 #footer-bottom {
     position: absolute;
     bottom: 0.5em;
