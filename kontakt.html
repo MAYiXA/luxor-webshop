@@ -33,19 +33,27 @@
           </ul>
         </nav>
       </header>
-      <main>
-          <section class="contact">
+      <main class="contact">
+          <section>
             <h2>Kontakt</h2>
             <p>
-              Har du ytterligare frågor är du välkommen att kontakta oss nedan.            </p>
+              Har du ytterligare frågor är du välkommen att kontakta oss nedan.
+            </p>
           </section>
           <form class="contact-form" action="#">
-            <label for="name">Namn</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <div class="item-wrap">
+              <div class="input-wrap">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="input-wrap">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            
             <label for="textbox">Meddelande</label>
-            <textarea name="textbox" id="textbox" cols="30" rows="10"></textarea>
+            <textarea name="textbox" id="textbox" required></textarea>
             <input type="submit" value="Skicka">
           </form>
       </main>

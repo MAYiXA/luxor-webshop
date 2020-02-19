@@ -19,14 +19,6 @@ body { /* vit body med lite margin */
     position: relative;
 }
 
-.main-center {
-    margin: 0 2%;
-}
-
-.main-margin-bottom {
-    margin: 0 0 5%;
-}
-
 .item-wrap {
     display: -webkit-box;
     display: flex;
@@ -34,6 +26,10 @@ body { /* vit body med lite margin */
 
 .intro {
     margin: 10% 0;
+}
+
+.products {
+    margin: 0 2% 5%;
 }
 
 .product-right {
@@ -61,6 +57,10 @@ body { /* vit body med lite margin */
     padding: 1.5em;
     background-color: grey;
     color: black;
+}
+
+.contact {
+    margin: 0 18% 5%;
 }
 
 #footer-bottom {
@@ -129,9 +129,29 @@ input[type="submit"] {
     right: 0;
 }
 
+.contact-form .input-wrap {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 1em 2em 0;
+}
+
+.contact-form .input-wrap input {
+    border: none; /* för att "återställa" standard stylingen av inputs och sedan lägga till min egna border-stil */
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
 label[for="textbox"],
 #textbox {
     display: block;
+}
+
+#textbox {
+    width: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 }
 
 /* slut på kod för FORMULÄR */
@@ -261,6 +281,10 @@ a:active {
 .questions p {
     font-weight: bold;
     margin: 0;
+}
+
+.contact-form label {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-bottom-link {
