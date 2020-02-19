@@ -52,11 +52,13 @@ body { /* vit body med lite margin */
     flex-flow: row wrap;
 }
 
-.q-and-a-page {
+.q-and-a-page,
+.cart-page {
     margin: 0 0 5%;
 }
 
-.q-and-a-page .questions {
+.q-and-a-page .questions,
+.cart-page .cart-product {
     margin: 1em;
     padding: 1.5em;
     background-color: grey;
@@ -65,6 +67,21 @@ body { /* vit body med lite margin */
 
 .contact-page {
     margin: 0 18% 5%;
+}
+
+.contact-page .contact-text {
+    margin-bottom: 4em;
+}
+
+.cart-page .cart-product {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-page .cart-finish {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 #footer-bottom {
@@ -311,13 +328,20 @@ a:active {
     outline-offset: 0.2em;
 }
 
-.q-and-a-page .questions p {
+.q-and-a-page .questions p,
+.cart-page p span {
     font-weight: bold;
     margin: 0;
 }
 
-.contact-page .contact-text {
-    margin-bottom: 4em;
+.cart-page .cart-finish .total-price {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cart-page .cart-finish .cart-finish-buttons .button {
+    margin: 1em 2em;
 }
 
 .footer-bottom-link {
