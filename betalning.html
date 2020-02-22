@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv"> <!--för svenska kommentarer i min kod-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXOR | Emmas webbutik</title>
+    <script src="https://kit.fontawesome.com/5bd0af0daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="stil.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="brand">
+          <a href="index.html">LUXOR</a>
+        </h1>
+        <nav class="top-menu">
+          <ul>
+            <li>
+              <a href="hundhalsband.html">Hundhalsband</a>
+            </li>
+            <li>
+              <a href="modellbilder.html">Modellbilder</a>
+            </li>
+            <li>
+              <a href="vanligafragor.html">Vanliga frågor</a>
+            </li>
+            <li>
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li>
+              <a href="kundkorg.html">Kundkorg <i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="contact-page">
+          <section class="contact-text">
+            <h2>Kontakt</h2>
+            <p>
+              Har du ytterligare frågor är du välkommen att kontakta oss nedan.
+            </p>
+          </section>
+          <form class="contact-form" action="#">
+            <div class="contact-wrap">
+              <div class="input-wrap">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="input-wrap">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <label for="textbox">Meddelande</label>
+            <textarea name="textbox" id="textbox" required></textarea>
+            <input class="button" type="submit" value="Skicka">
+          </form>
+      </main>
+      <footer id="footer-bottom">
+        <a class="footer-bottom-link" href="https://www.facebook.com/">
+          <i class="fab fa-facebook"></i> Facebook</a>
+        <a class="footer-bottom-link" href="https://www.instagram.com/">
+          <i class="fab fa-instagram"></i> Instagram</a>
+      </footer>
+    </div>
+  </body>
+</html>
