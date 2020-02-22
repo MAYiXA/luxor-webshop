@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="stil.css" />
   </head>
   <body>
+    <!--en container som ram runt allt innehåll på varje sida-->
     <div class="container">
-      <header>
+      <header> <!--semantisk tagg som visar överdelen av en sida med navigering och sidnamn-->
         <h1 id="brand">
           <a href="index.html">LUXOR</a>
         </h1>
-        <nav class="top-menu">
+        <nav class="top-menu"> <!--navigeringsmeny-->
           <ul>
             <li>
               <a href="hundhalsband.html">Hundhalsband</a>
@@ -33,6 +34,7 @@
           </ul>
         </nav>
       </header>
+      <!--använder en main för varje sida som bestämmer margin enligt lådmollen, sedan är det wrappers och sektioner för textdelar med rubriker och paragrafer-->
       <main class="intro-page">
         <div class="item-wrap">
           <div class="img-intro"></div>
@@ -46,6 +48,7 @@
           </section>
         </div>
       </main>
+      <!--samma footer på varje sida med sociala media länkar-->
       <footer id="footer-bottom">
         <a class="footer-bottom-link" href="https://www.facebook.com/">
           <i class="fab fa-facebook"></i> Facebook</a>
