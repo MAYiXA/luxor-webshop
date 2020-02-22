@@ -61,7 +61,8 @@ body {
 }
 
 .q-and-a-page,
-.cart-page {
+.cart-page,
+.payment-page {
   margin: 0 0 5%;
 }
 
@@ -90,7 +91,8 @@ body {
   justify-content: space-between; /* utspridda så långt som möjligt från varandra i  flexboxen */
 }
 
-.cart-page .cart-finish {
+.cart-page .cart-finish,
+.payment-page .payment-finish {
   /* flexbox med prefix för kompabilitet i flera webbläsare */
   display: -webkit-box;
   display: flex;
@@ -204,13 +206,6 @@ input[type='submit'] {
   margin-left: 3.5em; /* mer margin från vänster */
 }
 
-.products-page select:focus,
-.products-page select:active {
-  /* vid focus och active blir det en prickad vit ram runt en liten bit ifrån */
-  outline: 1px dotted white;
-  outline-offset: 0.2em;
-}
-
 .products-page .product-left input[type='submit'] {
   /* placerad helt till höger gentemot den relativa div:en den ligger i */
   position: absolute;
@@ -250,7 +245,8 @@ input[type='submit'] {
   margin-bottom: 4em;
 }
 
-.contact-page .contact-form .input-wrap input {
+.contact-page .contact-form .input-wrap input,
+.payment-page .payment-form .input-wrap input {
   border: none; /* för att "återställa" standard stylingen av inputs och sedan lägga till min egna border-stil */
   border-bottom: 1px solid white; /* vit linje undertill */
   background-color: transparent; /* genomskinlig bakgrund */
@@ -270,7 +266,8 @@ input[type='submit'] {
   resize: none; /* tar bort hörnet som gör att man kan ändra storlek på textarean som användare */
 }
 
-.contact-page .contact-form label {
+.contact-page .contact-form label,
+.payment-page .payment-form label {
   font-family: 'Montserrat', sans-serif; /* google typsnitt med "backup" */
   margin-bottom: 0.5em;
   font-weight: bold; /* fet text */
@@ -278,17 +275,18 @@ input[type='submit'] {
 
 #name,
 #email,
-#textbox {
+#textbox,
+.payment-page .payment-form .input-wrap input {
   font-family: 'Montserrat', sans-serif; /* google typsnitt med "backup" */
   font-size: 1em;
   color: white;
 }
 
-#name:focus,
-#email:focus,
+input:focus,
+select:focus,
 #textbox:focus,
-#name:active,
-#email:active,
+input:active,
+select:active,
 #textbox:active {
   /* vit prickad ram runt en liten bit ifrån vid focus och active */
   outline: 1px dotted white;
@@ -297,6 +295,26 @@ input[type='submit'] {
 
 .contact-page .contact-form .button {
   margin: 1em auto; /* centrerad */
+}
+
+.payment-page .payment-form {
+  border: 1px solid white;
+}
+
+.payment-page .payment-form .payment-wrap {
+  /* flexbox med prefix för kompabilitet i flera webbläsare */
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start; /* fördelade med så stort mellanrum som möjligt */
+  margin: 1em;
+}
+
+.payment-page .payment-form .input-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1em;
+  width: 25%;
 }
 
 /* slut på kod för FORMULÄR */
@@ -378,13 +396,15 @@ a:active {
   margin: 0;
 }
 
-.cart-page .cart-finish .total-price {
+.cart-page .cart-finish .total-price,
+.payment-page .payment-finish .total-price {
   width: 100%;
   text-align: center; /* centrerad text */
   font-size: 1.5em;
 }
 
-.cart-page .cart-finish .cart-finish-buttons .button {
+.cart-page .cart-finish .cart-finish-buttons .button,
+.payment-page .payment-finish .button {
   margin: 1em 2em;
 }
 
@@ -562,7 +582,7 @@ a:active {
   }
 
   .products-page select {
-      display: none;
+    display: none;
   }
 
   .products-page .product-right .product-price {

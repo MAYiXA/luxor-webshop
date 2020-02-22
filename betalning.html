@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="sv"> <!--för svenska kommentarer i min kod-->
+<html lang="sv">
+  <!--för svenska kommentarer i min kod-->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LUXOR | Emmas webbutik</title>
-    <script src="https://kit.fontawesome.com/5bd0af0daf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5bd0af0daf.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="stil.css" />
   </head>
   <body>
@@ -28,39 +32,107 @@
               <a href="kontakt.html">Kontakt</a>
             </li>
             <li>
-              <a href="kundkorg.html">Kundkorg <i class="fas fa-shopping-cart"></i></a>
+              <a href="kundkorg.html"
+                >Kundkorg <i class="fas fa-shopping-cart"></i
+              ></a>
             </li>
           </ul>
         </nav>
       </header>
-      <main class="contact-page">
-          <section class="contact-text">
-            <h2>Kontakt</h2>
-            <p>
-              Har du ytterligare frågor är du välkommen att kontakta oss nedan.
-            </p>
-          </section>
-          <form class="contact-form" action="#">
-            <div class="contact-wrap">
-              <div class="input-wrap">
-                <label for="name">Namn</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="input-wrap">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              </div>
+      <main class="payment-page">
+        <h2>Betalning</h2>
+        <form class="payment-form" action="#">
+          <div class="payment-wrap">
+            <div class="input-wrap">
+              <label for="name-1">Förnamn</label>
+              <input type="text" id="name1" name="name1" />
             </div>
-            <label for="textbox">Meddelande</label>
-            <textarea name="textbox" id="textbox" required></textarea>
-            <input class="button" type="submit" value="Skicka">
-          </form>
+            <div class="input-wrap">
+              <label for="name-2">Efternamn</label>
+              <input type="text" id="name2" name="name2" />
+            </div>
+          </div>
+          <div class="payment-wrap">
+            <div class="input-wrap">
+              <label for="payment-email">Emailadress</label>
+              <input
+                type="email"
+                id="payment-email"
+                name="payment-email"
+                required
+              />
+            </div>
+            <div class="input-wrap">
+              <label for="mobile">Mobilnummer</label>
+              <input type="text" id="mobile" name="mobile" />
+            </div>
+            <div class="input-wrap">
+              <label for="id-number">Personnummer</label>
+              <input
+                type="text"
+                id="id-number"
+                name="id-number"
+                placeholder="ÅÅMMDDxxxx"
+                required
+              />
+            </div>
+          </div>
+          <div class="payment-wrap">
+            <div class="input-wrap">
+              <label for="address">Gatuadress</label>
+              <input type="text" id="address" name="address" />
+            </div>
+            <div class="input-wrap">
+              <label for="postnr">Postnummer</label>
+              <input type="text" id="postnr" name="postnr" />
+            </div>
+            <div class="input-wrap">
+              <label for="city">Stad</label>
+              <input type="text" id="city" name="city" />
+            </div>
+          </div>
+          <p>Betalningsalternativ</p>
+          <div class="payment-wrap">
+            <input
+              type="radio"
+              id="pay-later"
+              name="pay-altern"
+              value="Faktura"
+            />
+            <label for="pay-later">Faktura <span>+25 SEK</span></label>
+            <input
+              type="radio"
+              id="cards"
+              name="pay-altern"
+              value="Kortbetalning"
+            />
+            <label for="cards">Konto-/kreditkort <span>+0 SEK</span></label>
+            <input
+              type="radio"
+              id="split-pay"
+              name="pay-altern"
+              value="Delbetalning"
+            />
+            <label for="split-pay"
+              >Delbetalning, ränta 0% <span>+50 SEK</span></label
+            >
+          </div>
+        </form>
+        <div class="payment-finish">
+            <p>Din order behandlas och levereras inom 1-2 arbetsdagar. Leverans sker till din adress.</p>
+          <p class="total-price">Totalt <span>000 SEK</span></p>
+          <div class="payment-btn">
+            <a href="kopgenomfort.html" class="button">Genomför köp</a>
+          </div>
+        </div>
       </main>
       <footer id="footer-bottom">
         <a class="footer-bottom-link" href="https://www.facebook.com/">
-          <i class="fab fa-facebook"></i> Facebook</a>
+          <i class="fab fa-facebook"></i> Facebook</a
+        >
         <a class="footer-bottom-link" href="https://www.instagram.com/">
-          <i class="fab fa-instagram"></i> Instagram</a>
+          <i class="fab fa-instagram"></i> Instagram</a
+        >
       </footer>
     </div>
   </body>
