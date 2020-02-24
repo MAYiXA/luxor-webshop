@@ -267,7 +267,7 @@ input[type='submit'] {
 }
 
 .contact-page .contact-form label,
-.payment-page .payment-form label {
+.payment-page .payment-form .input-wrap label {
   font-family: 'Montserrat', sans-serif; /* google typsnitt med "backup" */
   margin-bottom: 0.5em;
   font-weight: bold; /* fet text */
@@ -315,6 +315,25 @@ select:active,
   flex-flow: column wrap;
   margin: 1em;
   width: 25%;
+}
+
+.payment-page .payment-form p {
+  margin-left: 2em;
+  font-weight: bold;
+}
+
+.pay-label {
+  font-family: 'Montserrat', sans-serif; /* google typsnitt med "backup" */
+}
+
+.pay-label span {
+  font-weight: bold;
+}
+
+.payment-page #pay-later,
+#cards,
+#split-pay {
+  margin: 0 1em 0 3em;
 }
 
 /* slut på kod för FORMULÄR */

@@ -7,8 +7,8 @@
     <title>LUXOR | Emmas webbutik</title>
     <script
       src="https://kit.fontawesome.com/5bd0af0daf.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" type="text/css" href="stil.css" />
   </head>
   <body>
@@ -41,15 +41,33 @@
       </header>
       <main class="payment-page">
         <h2>Betalning</h2>
-        <form class="payment-form" action="#">
+        <form
+          class="payment-form"
+          id="pay-form"
+          action="index.html"
+        >
           <div class="payment-wrap">
             <div class="input-wrap">
               <label for="name-1">Förnamn</label>
-              <input type="text" id="name1" name="name1" />
+              <input
+                type="text"
+                id="name1"
+                name="name1"
+                pattern="[a-zA-ZåäöÅÄÖ]{2,}"
+                placeholder="Minst två bokstäver mellan a-ö"
+                required
+              />
             </div>
             <div class="input-wrap">
               <label for="name-2">Efternamn</label>
-              <input type="text" id="name2" name="name2" />
+              <input
+                type="text"
+                id="name2"
+                name="name2"
+                pattern="[a-zA-ZåäöÅÄÖ]{2,}"
+                placeholder="Minst två bokstäver mellan a-ö"
+                required
+              />
             </div>
           </div>
           <div class="payment-wrap">
@@ -59,12 +77,22 @@
                 type="email"
                 id="payment-email"
                 name="payment-email"
+                placeholder="exempel@exempel.se"
                 required
               />
             </div>
             <div class="input-wrap">
               <label for="mobile">Mobilnummer</label>
-              <input type="text" id="mobile" name="mobile" />
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                minlength="9"
+                maxlength="14"
+                pattern="[0-9]{9,14}"
+                placeholder="9-14 nummer"
+                required
+              />
             </div>
             <div class="input-wrap">
               <label for="id-number">Personnummer</label>
@@ -73,6 +101,9 @@
                 id="id-number"
                 name="id-number"
                 placeholder="ÅÅMMDDxxxx"
+                pattern="[0-9]{10}"
+                minlength="10"
+                maxlength="10"
                 required
               />
             </div>
@@ -80,49 +111,84 @@
           <div class="payment-wrap">
             <div class="input-wrap">
               <label for="address">Gatuadress</label>
-              <input type="text" id="address" name="address" />
+              <input
+                type="text"
+                id="address"
+                name="address"
+                pattern="[a-zA-ZåäöÅÄÖ0-9\s]{2,}"
+                placeholder="Gatunamn och nummer"
+                required
+              />
             </div>
             <div class="input-wrap">
               <label for="postnr">Postnummer</label>
-              <input type="text" id="postnr" name="postnr" />
+              <input
+                type="text"
+                id="postnr"
+                name="postnr"
+                minlength="5"
+                maxlength="5"
+                pattern="[0-9]{5}"
+                placeholder="00000"
+                required
+              />
             </div>
             <div class="input-wrap">
               <label for="city">Stad</label>
-              <input type="text" id="city" name="city" />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                pattern="[a-zA-ZåäöÅÄÖ\s]{2,}"
+                placeholder="Endast bokstäver"
+                required
+              />
             </div>
           </div>
           <p>Betalningsalternativ</p>
           <div class="payment-wrap">
-            <input
-              type="radio"
-              id="pay-later"
-              name="pay-altern"
-              value="Faktura"
-            />
-            <label for="pay-later">Faktura <span>+25 SEK</span></label>
-            <input
-              type="radio"
-              id="cards"
-              name="pay-altern"
-              value="Kortbetalning"
-            />
-            <label for="cards">Konto-/kreditkort <span>+0 SEK</span></label>
-            <input
-              type="radio"
-              id="split-pay"
-              name="pay-altern"
-              value="Delbetalning"
-            />
-            <label for="split-pay"
-              >Delbetalning, ränta 0% <span>+50 SEK</span></label
-            >
+            <label class="pay-label" for="pay-later">
+              <input
+                type="radio"
+                id="pay-later"
+                name="pay-altern"
+                value="Faktura"
+              />
+              Faktura <span>+25 SEK</span>
+            </label>
+            <label class="pay-label" for="cards">
+              <input
+                type="radio"
+                id="cards"
+                name="pay-altern"
+                value="Kortbetalning"
+              />
+              Konto-/kreditkort <span>+0 SEK</span>
+            </label>
+            <label class="pay-label" for="split-pay">
+              <input
+                type="radio"
+                id="split-pay"
+                name="pay-altern"
+                value="Delbetalning"
+              />
+              Delbetalning, ränta 0% <span>+50 SEK</span>
+            </label>
           </div>
         </form>
         <div class="payment-finish">
-            <p>Din order behandlas och levereras inom 1-2 arbetsdagar. Leverans sker till din adress.</p>
+          <p>
+            Din order behandlas och levereras inom 1-2 arbetsdagar. Leverans
+            sker till din adress.
+          </p>
           <p class="total-price">Totalt <span>000 SEK</span></p>
           <div class="payment-btn">
-            <a href="kopgenomfort.html" class="button">Genomför köp</a>
+            <input
+              form="pay-form"
+              type="submit"
+              class="button"
+              value="Genomför köp"
+            />
           </div>
         </div>
       </main>
@@ -135,5 +201,6 @@
         >
       </footer>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
