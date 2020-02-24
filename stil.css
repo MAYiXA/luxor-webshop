@@ -62,7 +62,8 @@ body {
 
 .q-and-a-page,
 .cart-page,
-.payment-page {
+.payment-page,
+.completed-page {
   margin: 0 0 5%;
 }
 
@@ -92,7 +93,8 @@ body {
 }
 
 .cart-page .cart-finish,
-.payment-page .payment-finish {
+.payment-page .payment-finish,
+.completed-page {
   /* flexbox med prefix för kompabilitet i flera webbläsare */
   display: -webkit-box;
   display: flex;
@@ -297,7 +299,7 @@ select:active,
   margin: 1em auto; /* centrerad */
 }
 
-.payment-page .payment-form {
+.payment-page .payment-form { /* tunn vit ram runt formuläret */
   border: 1px solid white;
 }
 
@@ -310,7 +312,7 @@ select:active,
   margin: 1em;
 }
 
-.payment-page .payment-form .input-wrap {
+.payment-page .payment-form .input-wrap { /* flexbox för positionering av alla input-fältens boxar för att få en fin struktur på formuläret */
   display: flex;
   flex-flow: column wrap;
   margin: 1em;
@@ -425,6 +427,23 @@ a:active {
 .cart-page .cart-finish .cart-finish-buttons .button,
 .payment-page .payment-finish .button {
   margin: 1em 2em;
+}
+
+.completed-page i {
+  width: 100%;
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: 10em;
+}
+
+.completed-page .completed-text {
+  text-align: center;
+}
+
+.completed-page .completed-text span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .footer-bottom-link {
