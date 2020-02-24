@@ -41,11 +41,12 @@
       </header>
       <main class="payment-page">
         <h2>Betalning</h2>
+        <!--formulär - alla fält är obligatoriska att fylla i med fler regler-->
         <form
           class="payment-form"
           id="pay-form"
           action="kopgenomfort.html"
-        >
+        > <!--skickar vidare användaren till ovan sida om formuläret fylls i enligt valideringskraven-->
           <div class="payment-wrap">
             <div class="input-wrap">
               <label for="name-1">Förnamn</label>
@@ -56,7 +57,7 @@
                 pattern="[a-zA-ZåäöÅÄÖ]{2,}"
                 placeholder="Minst två bokstäver mellan a-ö"
                 required
-              />
+              /> <!--pattern med regler som innebär att man får fylla i vilka bokstäver som helst i svenska alfabetet, minst två bokstäver-->
             </div>
             <div class="input-wrap">
               <label for="name-2">Efternamn</label>
@@ -67,7 +68,7 @@
                 pattern="[a-zA-ZåäöÅÄÖ]{2,}"
                 placeholder="Minst två bokstäver mellan a-ö"
                 required
-              />
+              /> <!--pattern med regler som innebär att man får fylla i vilka bokstäver som helst i svenska alfabetet, minst två bokstäver-->
             </div>
           </div>
           <div class="payment-wrap">
@@ -79,7 +80,7 @@
                 name="payment-email"
                 placeholder="exempel@exempel.se"
                 required
-              />
+              /> <!--type="email" validerar automatiskt så att det blir korrekt email-format-->
             </div>
             <div class="input-wrap">
               <label for="mobile">Mobilnummer</label>
@@ -92,7 +93,7 @@
                 pattern="[0-9]{9,14}"
                 placeholder="9-14 nummer"
                 required
-              />
+              /> <!--pattern med regler som innebär att man får fylla i vilka siffor som helst, minst 9 men upp till 14 siffror då världens mobilnummer kan vara olika långa-->
             </div>
             <div class="input-wrap">
               <label for="id-number">Personnummer</label>
@@ -105,7 +106,7 @@
                 minlength="10"
                 maxlength="10"
                 required
-              />
+              /> <!--pattern med regler som innebär att man får fylla i vilka siffor som helst, minst och max 10 siffror då ett svenskt personnummer inte är längre än så men de fyra sista siffrorna inkluderat, placeholdern visar hur man ska skriva in numret-->
             </div>
           </div>
           <div class="payment-wrap">
@@ -118,7 +119,7 @@
                 pattern="[a-zA-ZåäöÅÄÖ0-9\s]{2,}"
                 placeholder="Gatunamn och nummer"
                 required
-              />
+              /> <!--pattern med regler som innebär att man får fylla i vilka bokstäver som helst i det svenska alfabetet, minst 2st. \s är ett reguljärt uttryck och är till för att man ska kunna använda mellanrum mellan gatunamnet och husnumret-->
             </div>
             <div class="input-wrap">
               <label for="postnr">Postnummer</label>
@@ -131,7 +132,7 @@
                 pattern="[0-9]{5}"
                 placeholder="00000"
                 required
-              />
+              /> <!--pattern med regler som innebär att man får fylla i vilka siffor som helst, minst och max 5st, placeholder visar exempel-->
             </div>
             <div class="input-wrap">
               <label for="city">Stad</label>
@@ -142,12 +143,13 @@
                 pattern="[a-zA-ZåäöÅÄÖ\s]{2,}"
                 placeholder="Endast bokstäver"
                 required
-              />
+              /> <!--pattern med regler som innebär att man får fylla i vilka bokstäver som helst i det svenska alfabetet, minst 2st. \s är ett reguljärt uttryck och är till för att man ska kunna använda mellanrum om stadens namn är tvådelat t.ex.-->
             </div>
           </div>
           <p>Betalningsalternativ</p>
           <div class="payment-wrap">
             <label class="pay-label" for="pay-later">
+              <!--det fanns ingen HTML-validering för radio-buttons så fick ta till Javascript som är infogat innan body-taggen för att de skulle bli obligatoriska - radio-buttons ligger inom labeln för att hela texten även ska markera radio-button vid klick och inte bara den runda lilla "knappen"-->
               <input
                 type="radio"
                 id="pay-later"
@@ -188,7 +190,7 @@
               type="submit"
               class="button"
               value="Genomför köp"
-            />
+            /> <!--för att få submit-knappen att hamna utanför formuläret så fyllde jag i form="id:t för formuläret" för att knappen ändå ska hänga ihop med det och för att valideringen skulle fungera-->
           </div>
         </div>
       </main>
