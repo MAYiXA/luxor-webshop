@@ -299,7 +299,8 @@ select:active,
   margin: 1em auto; /* centrerad */
 }
 
-.payment-page .payment-form { /* tunn vit ram runt formuläret */
+.payment-page .payment-form {
+  /* tunn vit ram runt formuläret */
   border: 1px solid white;
 }
 
@@ -307,21 +308,28 @@ select:active,
   /* flexbox med prefix för kompabilitet i flera webbläsare */
   display: -webkit-box;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start; /* fördelade med så stort mellanrum som möjligt */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+          justify-content: flex-start; /* fördelade med så stort mellanrum som möjligt */
   margin: 1em;
 }
 
-.payment-page .payment-form .input-wrap { /* flexbox för positionering av alla input-fältens boxar för att få en fin struktur på formuläret */
+.payment-page .payment-form .input-wrap {
+  /* flexbox för positionering av alla input-fältens boxar för att få en fin struktur på formuläret */
+  display: -webkit-box;
   display: flex;
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
   margin: 1em;
   width: 25%;
 }
 
 .payment-page .payment-form p {
   margin-left: 2em;
-  font-weight: bold;
+  font-weight: bold; /* fet text */
 }
 
 .pay-label {
@@ -329,12 +337,13 @@ select:active,
 }
 
 .pay-label span {
-  font-weight: bold;
+  font-weight: bold; /* fet text */
 }
 
 .payment-page #pay-later,
 #cards,
 #split-pay {
+  /* labels för radio-buttons fick special-margin för att få "luft" emellan */
   margin: 0 1em 0 3em;
 }
 
@@ -426,10 +435,11 @@ a:active {
 
 .cart-page .cart-finish .cart-finish-buttons .button,
 .payment-page .payment-finish .button {
-  margin: 1em 2em;
+  margin: 1em 2em; /* "luft" runt knapparna */
 }
 
 .completed-page i {
+  /* checkbocken är en "text"-ikon från fontawesome som jag förstorat och placerat i miten överst på sidan för genomförtköp.html */
   width: 100%;
   margin-top: 0.5em;
   text-align: center;
@@ -437,13 +447,13 @@ a:active {
 }
 
 .completed-page .completed-text {
-  text-align: center;
+  text-align: center; /* centrerad text */
 }
 
 .completed-page .completed-text span {
-  display: block;
-  font-size: 1.2em;
-  font-weight: bold;
+  display: block; /* ska ta upp hela raden */
+  font-size: 1.2em; /* större än paragraftexten */
+  font-weight: bold; /* fet text */
 }
 
 .footer-bottom-link {
