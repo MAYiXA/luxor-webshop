@@ -350,6 +350,7 @@ template {
 [hidden] {
   display: none;
 }
+
 /* ------------------------ */
 /* BAS */
 
@@ -663,9 +664,9 @@ select:active,
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: start;
-          justify-content: flex-start; /* fördelade med så stort mellanrum som möjligt */
+  justify-content: flex-start; /* fördelade med så stort mellanrum som möjligt */
   margin: 1em;
 }
 
@@ -675,7 +676,7 @@ select:active,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   margin: 1em;
   width: 25%;
 }
@@ -706,7 +707,7 @@ select:active,
 /* alla texter har google typsnitt med relevant "backup" typsnitt */
 h2 {
   margin: 1em 0 0.5em;
-  font-size: 2.8em;
+  font-size: 2.3em;
   font-family: 'Vidaloka', serif;
   font-weight: 400; /* då texten var för tjock så fick jag göra den smalare */
 }
@@ -729,6 +730,7 @@ h4 {
 p,
 a {
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
 }
 
 a:focus,
@@ -743,7 +745,6 @@ a:active {
 }
 
 .intro-page .intro p {
-  font-size: 1.2em;
   max-width: 19.5em; /* för att inte gå för långt ut åt sidorna */
 }
 
